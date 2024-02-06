@@ -1,2 +1,2 @@
-# Bamboo_Buddies
+# GupShup
  
