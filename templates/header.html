@@ -1,0 +1,58 @@
+{% load static %}
+
+<div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bxs-chat'></i>
+        <div class="logo_name">GupShup</div>
+        {% comment %} <i class="bx bx-menu" id="btn"></i> {% endcomment %}
+        <i class='bx bxs-chevrons-left' id="btn"></i>
+    </div>
+    <ul class="nav-list">
+        <li>
+            <i class="bx bx-search"></i>
+            <input type="text" placeholder="Search" />
+            <span class="tooltip">Search</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-grid-alt"></i>
+                <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-user"></i>
+                <span class="links_name">User</span>
+            </a>
+            <span class="tooltip">User</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-chat"></i>
+                <span class="links_name">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-heart"></i>
+                <span class="links_name">Saved</span>
+            </a>
+            <span class="tooltip">Saved</span>
+        </li>
+        <li>
+            <a href="#">
+                <i class="bx bx-cog"></i>
+                <span class="links_name">Setting</span>
+            </a>
+            <span class="tooltip">Setting</span>
+        </li>
+        <li class="profile">
+            <div class="profile-details">
+                {% comment %} <img src="profile.jpg" alt="profileImg" /> {% endcomment %}
+            </div>
+            <i class="bx bx-log-out" id="log_out"></i>
+        </li>
+    </ul>
+</div>

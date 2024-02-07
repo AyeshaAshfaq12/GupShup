@@ -1,0 +1,29 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GupShup</title>
+
+    {% comment %} <!-------------- CSS STYLING -------------> {% endcomment %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/reponsive.css' %}">
+
+
+    {% comment %} <!-------------- FONT AWESOME ICONS -------------> {% endcomment %}
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='8https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' rel="stylesheet" >
+</head>
+<body>
+    
+    {% include 'header.html' %}
+    <section class="home-section">
+        {% block body_content %}{% endblock body_content %}
+    </section>
+    
+    {% comment %} <!-------------- JS Linking --------------> {% endcomment %}
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>

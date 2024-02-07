@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+{% load static %}
+
+{% block body_content %}
+
+{% comment %} Put Your Body Code Here Except for Header and Footer {% endcomment %}
+
+<div class="welcome-box">
+    <div class="text">
+        <p>Welcome to</p>
+        <p class="gupshup">GupShup</p>
+    </div>
+    <form id="sender_form" class="input-box" method="POST">
+        {% csrf_token %}
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <button type="submit"><i class='bx bx-send'></i></button>
+    </form>
+</div>
+
+{% endblock body_content %}
